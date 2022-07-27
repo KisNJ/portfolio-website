@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.295fcfc4.css",
+    "main.js": "/portfolio-website/static/js/main.2c72f3a5.js",
+    "static/media/memoryCard.PNG": "/portfolio-website/static/media/memoryCard.81f98b2fede069faa2ca.PNG",
+    "static/media/whereIsWaldo.PNG": "/portfolio-website/static/media/whereIsWaldo.ece1c0c37d4f8539603a.PNG",
+    "static/media/gameReview.PNG": "/portfolio-website/static/media/gameReview.5450f3d0b9c5dd57adf4.PNG",
+    "static/media/stock-face.jpg": "/portfolio-website/static/media/stock-face.ae74ac3b32461d3ed75a.jpg",
+    "static/media/pcShop.PNG": "/portfolio-website/static/media/pcShop.2a06d7f6b07132adcb07.PNG",
+    "static/media/battleship.PNG": "/portfolio-website/static/media/battleship.42f7c926d63edb5f2662.PNG",
+    "static/media/cv.PNG": "/portfolio-website/static/media/cv.7106046f362dcad54342.PNG",
+    "static/media/weatherApp.png": "/portfolio-website/static/media/weatherApp.704c43b8fde9fcf04261.png",
+    "static/media/todoList.PNG": "/portfolio-website/static/media/todoList.ff7678ce7b8dd4430d53.PNG",
+    "index.html": "/portfolio-website/index.html",
+    "main.295fcfc4.css.map": "/portfolio-website/static/css/main.295fcfc4.css.map",
+    "main.2c72f3a5.js.map": "/portfolio-website/static/js/main.2c72f3a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.295fcfc4.css",
+    "static/js/main.2c72f3a5.js"
+  ]
+}
