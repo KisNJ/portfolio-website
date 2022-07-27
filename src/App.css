@@ -10,3 +10,22 @@ padding: 5px 10px;
 i{
   font-size: 40px;
 }
+.imgs img{
+  width: 90px;
+  margin-bottom: 10px;
+}
+img{
+  animation: fadeInDown 1s;
+}
+h1{
+  animation: fadeInDown 1s;
+}
+@keyframes fadeInDown{
+  from{
+    opacity: 0.1;
+    transform: translateY(-50%);
+  }to{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

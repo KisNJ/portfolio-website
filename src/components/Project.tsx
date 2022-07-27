@@ -22,7 +22,7 @@ const Project: React.FC<Props> = ({ img, title, descirption }) => {
             onClick={() => setOpened(true)}
             className="pointer"
             src={require(`${img}`)}
-            style={{ maxWidth: "clamp(50px,100%,15000px)" }}
+            style={{ maxWidth: "clamp(50px,100%,15000px)",marginBottom:"10px" }}
             alt=""
           />
         </Card.Section>

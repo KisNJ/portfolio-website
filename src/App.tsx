@@ -17,6 +17,10 @@ export default function App() {
   const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+
+  const  [scrollToAbout, setScrollToAbout] = useState<any>({})
+  const  [scrollToProjects, setScrollToProjects] = useState<any>({})
+  const  [scrollToContact, setScrollToContact] = useState<any>({})
   return (
     <ColorSchemeProvider
       colorScheme={colorScheme}
@@ -69,7 +73,7 @@ export default function App() {
                 height={"fit-content"}
                 p="md"
               >
-                <HeaderP />
+                <HeaderP aboutS={scrollToAbout} projectsS={scrollToProjects} contactS={scrollToContact}/>
               </Header>
             </>
           }
@@ -86,7 +90,14 @@ export default function App() {
             theme={{
               fontFamily: "Raleway, sans-serif",
               primaryColor: "indigo",
-              colorScheme,
+               colorScheme ,   
+               breakpoints: {
+                xs: 100,
+                sm: 800,
+                md: 1000,
+                lg: 1275,
+                xl: 1800,
+              },         
             }}
             styles={{
               Title: (theme) => ({
@@ -108,9 +119,9 @@ export default function App() {
             withGlobalStyles
           >
             <Stack>
-              <AboutSection />
-              <Projects />
-              <Contact/>
+              <AboutSection setS={setScrollToAbout}/>
+              <Projects setS={setScrollToProjects}/>
+              <Contact setS={setScrollToContact}/>
             </Stack>
           </MantineProvider>
         </AppShell>

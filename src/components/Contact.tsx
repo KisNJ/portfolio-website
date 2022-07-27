@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useEffect,useRef} from "react";
+import { useScrollIntoView } from '@mantine/hooks';
 import {
   Title,
   Container,
@@ -9,10 +10,16 @@ import {
   useMantineTheme,
   UnstyledButton,
 } from "@mantine/core";
-const Contact = () => {
-  const theme = useMantineTheme();
+interface Props{
+    setS:any;
+  }
+const Contact:React.FC<Props> = ({setS}) => {
+  const contactRef=useRef<HTMLDivElement>(null)
+  useEffect(()=>{
+    setS(contactRef)
+  },[])
   return (
-    <Container style={{ width: "100%" }}>
+    <Container style={{ width: "100%" }} ref={contactRef}>
       <Box mb="xl" ml="lg">
         <Title order={2}>Contact</Title>
       </Box>
